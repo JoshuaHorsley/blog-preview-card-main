@@ -1,14 +1,17 @@
 body{
     background-color:hsl(47, 88%, 63%) ;
-    font-family: 'Figtree', sans-serif;
+    font-family:"Figtree", sans-serif;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    min-width: 300px;
+    max-width: 375px;
+    
     padding: 1.5em;
     border-radius: 20px;
     border:solid 2px black;
@@ -35,5 +38,40 @@ body{
 
 .pubDate{
     font-size: 0.75em;
-    font-weight: 500;
+    font-weight: 600;
 }
+
+.title{
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.title:hover{ 
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+
+}
+
+.description {
+    font-weight: 400;
+    color: gray;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.author{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 2rem;
+}
+
+.author_avatar{
+    width: 30px;
+}
+
+.author_name{
+    font-weight: 800;
+}
+
